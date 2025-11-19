@@ -2,7 +2,7 @@ const bcrypt = require("bcryptjs");
 const salt = bcrypt.genSaltSync(10);
 const axios = require("axios");
 const speakeasy = require("speakeasy");
-const { Resend } = require("resend"); // ✅ Correct impot
+const { Resend } = require("resend"); // ✅ Correct ipot
 const secret = speakeasy.generateSecret({ length: 4 });
 
 const resend = new Resend(process.env.RESEND_API_KEY); // ✅ Must initalize with your API key
