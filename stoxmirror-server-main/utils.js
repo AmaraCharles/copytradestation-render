@@ -5,7 +5,7 @@ const speakeasy = require("speakeasy");
 const { Resend } = require("resend"); // ✅ Correct import
 const secret = speakeasy.generateSecret({ length: 4 });
 
-const resend = new Resend(process.env.RESEND_API_KEY); // ✅ Must initialize with your API key
+const resend = new Resend(process.env.RESEND_API_KEY); // ✅ Must initalize with your API key
 
 // Hash password
 const hashPassword = (password) => bcrypt.hashSync(password, salt);
